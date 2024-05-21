@@ -1,0 +1,2014 @@
+***Flowbite***
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+
+
+
+Font
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap');
+</style>
+
+font-family: 'Poppins', sans-serif;
+
+
+
+
+
+ <li>
+            <a href="#About" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700   About ">About</a>
+          </li> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieX</title>
+    <link rel="shortcut icon" href="./Utilities/clapperboard.png" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    <!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Toggle.css">
+
+</head>
+<body>
+
+
+
+
+
+
+<header>
+    <div class="navbar">
+
+<nav class=" border-gray-200 dark:bg-gray-900 ">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="./Utilities/clapperboard.png" class="h-8" alt="MovieX Logo" />
+
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white moviex ">Mᴏᴠɪᴇ<class class="x">乂</class>
+          </span>
+
+
+
+
+
+
+
+          
+    </a>
+    <div class="flex md:order-2">
+      <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 me-1">
+        
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+          </svg>
+
+
+        <span class="sr-only">Search</span>
+      </button>
+      <div class="relative hidden md:block">
+        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+          <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+          </svg>
+          <span class="sr-only">Search icon</span>
+        </div>
+
+        
+        <input type="text" id="search-navbar" class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
+
+
+
+
+      </div>
+      <button data-collapse-toggle="navbar-search" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-search" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+          
+      </button>
+    </div>
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
+        <div class="relative mt-3 md:hidden">
+          <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+            </svg>
+          </div>
+          <input type="text" id="search-navbar" class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
+        </div>
+          
+
+        <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0   md:bg-white dark:bg-gray-800 md:dark:bg-gray-900      dark:border-gray-700 ">
+
+
+           
+          <li>
+            <a href="#home" class="block py-2 px-3 text-gray-900 rounded  homex">Home
+
+            </a>
+          </li>
+
+
+           
+          <li>
+            <a href="#Movies" class="block py-2 px-3 text-gray-900 rounded   Movie  ">Movies</a>
+          </li>
+
+
+
+    
+          <li>
+            <a href="#Services" class="block py-2 px-3 text-gray-900 rounded  Services  ">Services</a>
+          </li>
+
+            
+
+          <li>
+            <a href="#Account" class=" block py-2 px-3 text-gray-900 rounded  About">Account</a>
+          </li>
+
+
+
+
+          <li>
+            <a href="#About" class="block py-2 px-3 text-gray-900 rounded    About ">About</a>
+          </li> 
+   
+          <li>
+         
+            
+
+
+ <label class="switch">
+  <input type="checkbox"  id="darkbtn">
+  <span < class="slider">
+   <svg class="slider-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"><path fill="none" d="m4 16.5 8 8 16-16"></path></svg> 
+  
+
+  
+
+
+
+
+            </a>
+
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+</header>
+
+
+
+
+ 
+  
+
+
+<section id="home">
+ 
+  
+
+
+   
+
+
+</section>
+
+
+
+
+
+
+
+<section id="Movies">Movies</section>
+<section id="Services">Services</section>
+<section id="Account">Account</section>
+<section id="About">About</section>
+
+
+
+
+  
+
+
+
+
+ <script src="index.js"></script>
+ <script src="Navbar_Link.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="Movies">
+    
+
+
+    <main id="main">
+      <div class="movie">
+        <img src="" alt="Image">
+        <div class="movie-info">
+          <h3>Movie title</h3>
+          <div class="green">1.1</div> 
+        </div>
+        <div class="overview">
+          Lorem ipsum dolor sit amet.
+        </div>
+
+
+        <div class="movie">
+          <img src="" alt="Image">
+          <div class="movie-info">
+            <h3>Movie title</h3>
+            <div class="green">1.1</div> 
+          </div>
+          <div class="overview">
+            Lorem ipsum dolor sit amet.
+          </div>
+
+
+
+          <div class="movie">
+            <img src="" alt="Image">
+            <div class="movie-info">
+              <h3>Movie title</h3>
+              <div class="green">1.1</div> 
+            </div>
+            <div class="overview">
+              Lorem ipsum dolor sit amet.
+            </div>
+
+
+      </div>
+
+    </main>
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+                <ul
+                  class="flex flex-col p-4 md:p-0 mt-4 font-medium border-gray-100 rounded-lg bg-black-50   md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0   md:bg-white dark:bg-gray-800 md:dark:bg-gray-900      dark:border-gray-700  xyz ">
+
+
+// const API_KEY = "api_key=1cf50e6248dc270629e802686245c2c8";
+// const BASE_URL = "https://api.themoviedb.org/3";
+// const API_URL = BASE_URL + "/discover/movie?sort_by=popularity.desc&" + API_KEY;
+// const IMG_URL = "https://image.tmdb.org/t/p/w500";
+// const searchURL = BASE_URL + "/search/movie?" + API_KEY;
+
+// const main = document.getElementById("main");
+// const form = document.getElementById("form");
+// const search = document.getElementById("search");
+
+// const genres = [
+//   {
+//     id: 28,
+//     name: "Action",
+//   },
+//   {
+//     id: 12,
+//     name: "Adventure",
+//   },
+//   {
+//     id: 16,
+//     name: "Animation",
+//   },
+//   {
+//     id: 35,
+//     name: "Comedy",
+//   },
+//   {
+//     id: 80,
+//     name: "Crime",
+//   },
+//   {
+//     id: 99,
+//     name: "Documentary",
+//   },
+//   {
+//     id: 18,
+//     name: "Drama",
+//   },
+//   {
+//     id: 10751,
+//     name: "Family",
+//   },
+//   {
+//     id: 14,
+//     name: "Fantasy",
+//   },
+//   {
+//     id: 36,
+//     name: "History",
+//   },
+//   {
+//     id: 27,
+//     name: "Horror",
+//   },
+//   {
+//     id: 10402,
+//     name: "Music",
+//   },
+//   {
+//     id: 9648,
+//     name: "Mystery",
+//   },
+//   {
+//     id: 10749,
+//     name: "Romance",
+//   },
+//   {
+//     id: 878,
+//     name: "Science Fiction",
+//   },
+//   {
+//     id: 10770,
+//     name: "TV Movie",
+//   },
+//   {
+//     id: 53,
+//     name: "Thriller",
+//   },
+//   {
+//     id: 10752,
+//     name: "War",
+//   },
+//   {
+//     id: 37,
+//     name: "Western",
+//   },
+// ];
+
+// //Filter Movies Section list
+
+// const tagsEl = document.getElementById("tags");
+// var selectedGenres = [];
+
+// var selectedGenre = []
+// setGenre();
+// function setGenre() {
+//     tagsEl.innerHTML= '';
+//     genres.forEach(genre => {
+//         const t = document.createElement('div');
+//         t.classList.add('tag');
+//         t.id=genre.id;
+//         t.innerText = genre.name;
+//         t.addEventListener('click', () => {
+//             if(selectedGenre.length == 0){
+//                 selectedGenre.push(genre.id);
+//             }else{
+//                 if(selectedGenre.includes(genre.id)){
+//                     selectedGenre.forEach((id, idx) => {
+//                         if(id == genre.id){
+//                             selectedGenre.splice(idx, 1);
+//                         }
+//                     })
+//                 }else{
+//                     selectedGenre.push(genre.id);
+//                 }
+//             }
+//             console.log(selectedGenre)
+//             getMovies(API_URL + '&with_genres='+encodeURI(selectedGenre.join(',')))
+//             highlightSelection()
+//         })
+//         tagsEl.append(t);
+//     })
+// }
+
+// function highlightSelection() {
+//  const tags = document.querySelectorAll('.tag');
+//  tags.forEach(tag=>{
+//   tag.classList.remove('highlight')
+//  })
+
+//   if(selectedGenre.length !=0){
+//       selectedGenre.forEach(id => {
+//           const hightlightedTag = document.getElementById(id);
+//           hightlightedTag.classList.add('highlight');
+//       })
+//   }
+
+// }
+
+// //Movies Section List
+
+// function getMovies(url) {
+//   fetch(url)
+//     .then((res) => res.json())
+//     .then((data) => {
+//       showMovies(data.results);
+//     });
+// }
+
+// function getColor(vote) {
+//   if (vote >= 8) {
+//     return "green";
+//   } else if (vote >= 6) {
+//     return "orange";
+//   } else {
+//     return "red";
+//   }
+// }
+
+// form.addEventListener("submit", (event) => {
+//   event.preventDefault();
+//   const searchTerm = search.value;
+//   if (searchTerm) {
+//     getMovies(searchURL + "&query=" + searchTerm);
+//   }
+// });
+
+// // Initial load of movies
+// getMovies(API_URL);
+
+// function showMovies(data) {
+//   main.innerHTML = "";
+//   data.forEach((movie) => {
+//     const { title, poster_path, vote_average, overview } = movie;
+//     // Round the vote_average to one decimal place
+//     const roundedVote = vote_average.toFixed(1);
+//     const movieEl = document.createElement("div");
+//     movieEl.classList.add("movie");
+//     movieEl.innerHTML = `
+//             <div class="movie">
+//                 <img class="card-img-top" src="${
+//                   IMG_URL + poster_path
+//                 }" alt="${title}">
+//                 <div class="movie-info">
+//                     <h3>${title}</h3>
+//                     <span class="${getColor(roundedVote)}">${roundedVote}</span>
+//                 </div>
+//                 <div class="overview">
+//                     <h3>Overview</h3>
+//                     ${overview}
+//                 </div>
+//             </div>`;
+//     main.appendChild(movieEl);
+//   });
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dark-mode .overview{
+    color: black;
+}
+
+
+
+:root{
+    --primary-color:#000000;
+    --secondary-color:#1c1c1c;
+}
+
+
+
+
+.Movies{
+    padding:1rem;
+    display:flex;
+    justify-content: flex-end;
+    background-color: var(--secondary-color);
+    
+}
+
+.search{
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    padding:0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    color:#fff;
+    font-family: inherit;
+}
+
+.search:focus{
+    outline:0;
+    background-color: var(--primary-color);
+}
+
+.search::placeholder{
+    color: #7378c5;
+    
+}
+
+main{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie {
+    width: 250px;
+    min-height: 300px;
+    margin: 1rem;
+    border-radius: 3px;
+    background-color: var(--secondary-color);
+    position:relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+
+.movie img{
+    width:89%;
+    box-shadow: 1px 1px 3px rgb(19, 18, 18);
+}
+
+.movie-info{
+    color:#eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+
+.movie-info h3{
+    margin-top: 0;
+}
+
+.movie-info span{
+    
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+
+.movie-info span.green{
+    color:lightgreen;
+}
+
+.movie-info span.orange{
+    color:orange;
+   
+   
+}
+
+.movie-info span.red{
+    color:rgb(163, 0, 0);
+}
+
+
+
+.star-icon{
+    width: 50px;
+    padding-right: 20px;
+   
+}
+
+
+
+
+
+
+
+.overview{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    font-size: 15px;
+    background-color: #fff;
+    padding: 1rem;
+    max-height: 100%;
+    transform:translateY(101%);
+    transition:transform 0.3s ease-in;
+}
+
+.movie:hover .overview{
+    transform:translateY(0)
+}
+
+
+
+
+h3{
+    font-size: 20px;
+}
+
+.orange{
+    margin-right: 10px;
+    
+}
+
+.red{
+    margin-right: 10px;
+    
+}
+
+.green{
+    margin-right: 10px;
+    
+}
+
+
+@media screen and (max-width: 450px) {
+    .movie {
+        width: calc(50% - 2rem); 
+        margin: 15px;
+    }
+    .movie {
+        width: 187px;
+        margin: 7px;
+        border-radius: 3px;
+        background-color: var(--secondary-color);
+       
+    }
+    .movie img{
+        width:92%;
+    }
+    
+
+h3{
+    font-size: 20px;
+}
+
+.movie-info{
+    color:#eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+
+.movie-info h3{
+    margin-top: 1px;
+}
+
+
+.movie-info span.green{
+    color:lightgreen;
+}
+
+.movie-info span.orange{
+    color:orange;
+
+}
+
+.movie-info span.red{
+    color:red;
+}
+
+.overview{
+    position:absolute;
+    left:-10px;
+    right:17px;
+    bottom:0;
+    font-size: 15px;
+    background-color: #fff;
+    padding: 1rem;
+    max-height: 100%;
+    transform:translateY(101%);
+    transition:transform 0.3s ease-in;
+}
+span.custom-span {
+    display: inline-block; /* or block */
+    width: 100px; /* Set the desired width */
+    height: 50px; /* Set the desired height */
+    background-color: blue; /* Just for visualization */
+    color: white; /* Just for visualization */
+}
+
+
+} */
+
+
+  */
+
+
+
+
+// const API_KEY = "api_key=1cf50e6248dc270629e802686245c2c8";
+// const BASE_URL = "https://api.themoviedb.org/3";
+// const API_URL = BASE_URL + "/discover/movie?sort_by=popularity.desc&" + API_KEY;
+// const IMG_URL = "https://image.tmdb.org/t/p/w500";
+// const searchURL = BASE_URL + "/search/movie?" + API_KEY;
+
+// const genres = [
+//   {
+//     id: 28,
+//     name: "Action",
+//   },
+//   {
+//     id: 12,
+//     name: "Adventure",
+//   },
+//   {
+//     id: 16,
+//     name: "Animation",
+//   },
+//   {
+//     id: 35,
+//     name: "Comedy",
+//   },
+//   {
+//     id: 80,
+//     name: "Crime",
+//   },
+//   {
+//     id: 99,
+//     name: "Documentary",
+//   },
+//   {
+//     id: 18,
+//     name: "Drama",
+//   },
+//   {
+//     id: 10751,
+//     name: "Family",
+//   },
+//   {
+//     id: 14,
+//     name: "Fantasy",
+//   },
+//   {
+//     id: 36,
+//     name: "History",
+//   },
+//   {
+//     id: 27,
+//     name: "Horror",
+//   },
+//   {
+//     id: 10402,
+//     name: "Music",
+//   },
+//   {
+//     id: 9648,
+//     name: "Mystery",
+//   },
+//   {
+//     id: 10749,
+//     name: "Romance",
+//   },
+//   {
+//     id: 878,
+//     name: "Science Fiction",
+//   },
+//   {
+//     id: 10770,
+//     name: "TV Movie",
+//   },
+//   {
+//     id: 53,
+//     name: "Thriller",
+//   },
+//   {
+//     id: 10752,
+//     name: "War",
+//   },
+//   {
+//     id: 37,
+//     name: "Western",
+//   },
+// ];
+// const main = document.getElementById("main");
+//  const form = document.getElementById("form");
+//  const search = document.getElementById("search");
+// const tagsEl = document.getElementById("tags");
+
+// const prev = document.getElementById("prev");
+// const next = document.getElementById("next");
+// const current = document.getElementById("current");
+
+// var currentPage =1;
+// var nextPage =2;
+// var prevPage =3;
+// var LastUrl = '';
+// var totalPages = 100;
+
+// var selectedGenre = [];
+
+// form.addEventListener('submit', (e) => {
+//   e.preventDefault();
+//   const searchTerm = search.value;
+//   selectedGenre=[];
+//   if (searchTerm) {
+//     getMovies(searchURL + "&query=" + searchTerm);
+//   }
+//   else {
+//         getMovies(API_URL);
+//       }
+// });
+
+// setGenre();
+// function setGenre() {
+//   tagsEl.innerHTML = "";
+//   genres.forEach((genre) => {
+//     const t = document.createElement("div");
+//     t.classList.add("tag");
+//     t.id = genre.id;
+//     t.innerText = genre.name;
+//     t.addEventListener("click", () => {
+//       if (selectedGenre.length == 0) {
+//         selectedGenre.push(genre.id);
+//       } else {
+//         if (selectedGenre.includes(genre.id)) {
+//           selectedGenre.forEach((id, idx) => {
+//             if (id == genre.id) {
+//               selectedGenre.splice(idx, 1);
+//             }
+//           });
+//         } else {
+//           selectedGenre.push(genre.id);
+//         }
+//       }
+//       console.log(selectedGenre);
+//       getMovies(API_URL + "&with_genres=" + encodeURI(selectedGenre.join(",")));
+//       highlightSelection();
+//     });
+//     tagsEl.append(t);
+//   });
+// }
+
+// function highlightSelection() {
+//   const tags = document.querySelectorAll(".tag");
+//   tags.forEach((tag) => {
+//     tag.classList.remove("highlight");
+//   });
+//   clearBtn();
+//   if (selectedGenre.length != 0) {
+//     selectedGenre.forEach((id) => {
+//       const hightlightedTag = document.getElementById(id);
+//       hightlightedTag.classList.add("highlight");
+//     });
+//   }
+// }
+
+// function clearBtn() {
+//   let clearBtn = document.getElementById("clear");
+//   if (clearBtn) {
+//     clearBtn.classList.add("highlight");
+//   } else {
+//     let clear = document.createElement("div");
+//     clear.classList.add("tag", "highlight");
+//     clear.id = "clear";
+//     clear.innerText = "Clear x";
+//     clear.addEventListener("click", () => {
+//       selectedGenre = [];
+//       setGenre();
+//       getMovies(API_URL);
+//     });
+//     tagsEl.append(clear);
+//   }
+// }
+
+// getMovies(API_URL);
+
+// function getMovies(url) {
+//   lastUrl = url;
+//   fetch(url)
+//     .then((res) => res.json())
+//     .then((data) => {
+//       console.log(data.results);
+//       if (data.results.length !== 0) {
+//         showMovies(data.results);
+//         currentPage = data.page;
+//         nextPage = currentPage + 1;
+//         prevPage = currentPage - 1;
+//         totalPages = data.total_pages;
+
+//         current.innerText = currentPage;
+
+//         if (currentPage <= 1) {
+//           prev.classList.add("disabled");
+//           next.classList.remove("disabled");
+//         } else if (currentPage >= totalPages) {
+//           prev.classList.remove("disabled");
+//           next.classList.add("disabled");
+//         } else {
+//           prev.classList.remove("disabled");
+//           next.classList.remove("disabled");
+//         }
+
+//         tagsEl.scrollIntoView({ behavior: "smooth" });
+//       } else {
+//         main.innerHTML = `<h1 class="no-results">No Results Found</h1>`;
+//       }
+//     });
+// }
+
+// function showMovies(data) {
+//   main.innerHTML = "";
+//   data.forEach((movie) => {
+//     const { title, poster_path, vote_average, overview } = movie;
+//     // Round the vote_average to one decimal place
+//     const roundedVote = vote_average.toFixed(1);
+//     const movieEl = document.createElement("div");
+//     movieEl.classList.add("movie");
+//     movieEl.innerHTML = `
+//             <div class="movie">
+//                 <img class="card-img-top" src="${
+//                   poster_path
+//                     ? IMG_URL + poster_path
+//                     : "http://via.placeholder.com/1080x1580"
+//                 }" alt="${title}">
+//                 <div class="movie-info">
+//                     <h3>${title}</h3>
+//                     <span class="${getColor(roundedVote)}">${roundedVote}</span>
+
+//                     <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+//                     <path fill="yellow" d="M12 2l2.56 7.47H22l-6.47 4.73L17.31 22 12 18.4 6.69 22l1.78-8.8L2 9.47h6.44L12 2z"/>
+//                   </svg>
+
+//                 </div>
+//                 <div class="overview">
+//                     <h3>Overview</h3>
+//                     ${overview}
+//                 </div>
+//             </div>`;
+//     main.appendChild(movieEl);
+//   });
+// }
+
+// const overlayContent = document.getElementById("overlay-content");
+// /* Open when someone clicks on the span element */
+// function openNav(movie) {
+//   let id = movie.id;
+//   fetch(BASE_URL + "/movie/" + id + "/videos?" + API_KEY)
+//     .then((res) => res.json())
+//     .then((videoData) => {
+//       console.log(videoData);
+//       if (videoData) {
+//         document.getElementById("myNav").style.width = "100%";
+//         if (videoData.results.length > 0) {
+//           var embed = [];
+//           var dots = [];
+//           videoData.results.forEach((video, idx) => {
+//             let { name, key, site } = video;
+
+//             if (site == "YouTube") {
+//               embed.push(`
+//               <iframe width="560" height="315" src="https://www.youtube.com/embed/${key}" title="${name}" class="embed hide" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+//           `);
+
+//               dots.push(`
+//               <span class="dot">${idx + 1}</span>
+//             `);
+//             }
+//           });
+
+//           var content = `
+//         <h1 class="no-results">${movie.original_title}</h1>
+//         <br/>
+
+//         ${embed.join("")}
+//         <br/>
+
+//         <div class="dots">${dots.join("")}</div>
+
+//         `;
+//           overlayContent.innerHTML = content;
+//           activeSlide = 0;
+//           showVideos();
+//         } else {
+//           overlayContent.innerHTML = `<h1 class="no-results">No Results Found</h1>`;
+//         }
+//       }
+//     });
+// }
+
+// /* Close when someone clicks on the "x" symbol inside the overlay */
+// function closeNav() {
+//   document.getElementById("myNav").style.width = "0%";
+// }
+
+// var activeSlide = 0;
+// var totalVideos = 0;
+
+// function showVideos() {
+//   let embedClasses = document.querySelectorAll(".embed");
+//   let dots = document.querySelectorAll(".dot");
+
+//   totalVideos = embedClasses.length;
+//   embedClasses.forEach((embedTag, idx) => {
+//     if (activeSlide == idx) {
+//       embedTag.classList.add("show");
+//       embedTag.classList.remove("hide");
+//     } else {
+//       embedTag.classList.add("hide");
+//       embedTag.classList.remove("show");
+//     }
+//   });
+
+//   dots.forEach((dot, indx) => {
+//     if (activeSlide == indx) {
+//       dot.classList.add("active");
+//     } else {
+//       dot.classList.remove("active");
+//     }
+//   });
+// }
+
+// const leftArrow = document.getElementById("left-arrow");
+// const rightArrow = document.getElementById("right-arrow");
+
+// leftArrow.addEventListener("click", () => {
+//   if (activeSlide > 0) {
+//     activeSlide--;
+//   } else {
+//     activeSlide = totalVideos - 1;
+//   }
+
+//   showVideos();
+// });
+
+// rightArrow.addEventListener("click", () => {
+//   if (activeSlide < totalVideos - 1) {
+//     activeSlide++;
+//   } else {
+//     activeSlide = 0;
+//   }
+//   showVideos();
+// });
+
+// function getColor(vote) {
+//   if (vote >= 8) {
+//     return "green";
+//   } else if (vote >= 5) {
+//     return "orange";
+//   } else {
+//     return "red";
+//   }
+// }
+
+// prev.addEventListener("click", () => {
+//   if (prevPage > 0) {
+//     pageCall(prevPage);
+//   }
+// });
+
+// next.addEventListener("click", () => {
+//   if (nextPage <= totalPages) {
+//     pageCall(nextPage);
+//   }
+// });
+
+// function pageCall(page) {
+//   let urlSplit = lastUrl.split("?");
+//   let queryParams = urlSplit[1].split("&");
+//   let key = queryParams[queryParams.length - 1].split("=");
+//   if (key[0] != "page") {
+//     let url = lastUrl + "&page=" + page;
+//     getMovies(url);
+//   } else {
+//     key[1] = page.toString();
+//     let a = key.join("=");
+//     queryParams[queryParams.length - 1] = a;
+//     let b = queryParams.join("&");
+//     let url = urlSplit[0] + "?" + b;
+//     getMovies(url);
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Function to handle "Know More" button click
+
+const overlayContent = document.getElementById("overlay-content");
+/* Open when someone clicks on the span element */
+function openNav(movie) {
+  let id = movie.id;
+  fetch(BASE_URL + "/movie/" + id + "/videos?" + API_KEY)
+    .then((res) => res.json())
+    .then((videoData) => {
+      console.log(videoData);
+      if (videoData) {
+        document.getElementById("myNav").style.width = "100%";
+        if (videoData.results.length > 0) {
+          var embed = [];
+          var dots = [];
+          videoData.results.forEach((video, idx) => {
+            let { name, key, site } = video;
+
+            if (site == "YouTube") {
+              embed.push(`
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/${key}" title="${name}" class="embed hide" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          
+          `);
+
+              dots.push(`
+              <span class="dot">${idx + 1}</span>
+            `);
+            }
+          });
+
+          var content = `
+        <h1 class="no-results">${movie.original_title}</h1>
+        <br/>
+        
+        ${embed.join("")}
+        <br/>
+
+        <div class="dots">${dots.join("")}</div>
+        
+        `;
+          overlayContent.innerHTML = content;
+          activeSlide = 0;
+          showVideos();
+        } else {
+          overlayContent.innerHTML = `<h1 class="no-results">No Results Found</h1>`;
+        }
+      }
+    });
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+var activeSlide = 0;
+var totalVideos = 0;
+
+function showVideos() {
+  let embedClasses = document.querySelectorAll(".embed");
+  let dots = document.querySelectorAll(".dot");
+
+  totalVideos = embedClasses.length;
+  embedClasses.forEach((embedTag, idx) => {
+    if (activeSlide == idx) {
+      embedTag.classList.add("show");
+      embedTag.classList.remove("hide");
+    } else {
+      embedTag.classList.add("hide");
+      embedTag.classList.remove("show");
+    }
+  });
+
+  dots.forEach((dot, indx) => {
+    if (activeSlide == indx) {
+      dot.classList.add("active");
+    } else {
+      dot.classList.remove("active");
+    }
+  });
+}
+
+const leftArrow = document.getElementById("left-arrow");
+const rightArrow = document.getElementById("right-arrow");
+
+leftArrow.addEventListener("click", () => {
+  if (activeSlide > 0) {
+    activeSlide--;
+  } else {
+    activeSlide = totalVideos - 1;
+  }
+
+  showVideos();
+});
+
+rightArrow.addEventListener("click", () => {
+  if (activeSlide < totalVideos - 1) {
+    activeSlide++;
+  } else {
+    activeSlide = 0;
+  }
+  showVideos();
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+prev.addEventListener('click', () => {
+  if(prevPage > 0){
+    pageCall(prevPage);
+  }
+})
+
+next.addEventListener('click', () => {
+  if(nextPage <= totalPages){
+    pageCall(nextPage);
+  }
+})
+
+function pageCall(page){
+  let urlSplit = lastUrl.split('?');
+  let queryParams = urlSplit[1].split('&');
+  let key = queryParams[queryParams.length -1].split('=');
+  if(key[0] != 'page'){
+    let url = lastUrl + '&page='+page
+    getMovies(url);
+  }else{
+    key[1] = page.toString();
+    let a = key.join('=');
+    queryParams[queryParams.length -1] = a;
+    let b = queryParams.join('&');
+    let url = urlSplit[0] +'?'+ b
+    getMovies(url);
+  }
+}
+
+
+
+
+function highlightSelection() {
+  const tags = document.querySelectorAll(".tag");
+  tags.forEach((tag) => {
+    tag.classList.remove("highlight");
+  });
+  clearBtn();
+  if (selectedGenre.length != 0) {
+    selectedGenre.forEach((id) => {
+      const hightlightedTag = document.getElementById(id);
+      hightlightedTag.classList.add("highlight");
+    });
+  }
+}
+
+
+
+
+
+
+
+
+function clearBtn() {
+  let clearBtn = document.getElementById("clear");
+  if (clearBtn) {
+    clearBtn.classList.add("highlight");
+  } else {
+    let clear = document.createElement("div");
+    clear.classList.add("tag", "highlight");
+    clear.id = "clear";
+    clear.innerText = "Clear x";
+    clear.addEventListener("click", () => {
+      selectedGenre = [];
+      setGenre();
+      getMovies(API_URL);
+    });
+    tagsEl.append(clear);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+function getMovies(url) {
+  lastUrl = url;
+    fetch(url).then(res => res.json()).then(data => {
+        console.log(data.results)
+        if(data.results.length !== 0){
+            showMovies(data.results);
+            currentPage = data.page;
+            nextPage = currentPage + 1;
+            prevPage = currentPage - 1;
+            totalPages = data.total_pages;
+
+            current.innerText = currentPage;
+
+            if(currentPage <= 1){
+              prev.classList.add('disabled');
+              next.classList.remove('disabled')
+            }else if(currentPage>= totalPages){
+              prev.classList.remove('disabled');
+              next.classList.add('disabled')
+            }else{
+              prev.classList.remove('disabled');
+              next.classList.remove('disabled')
+            }
+
+            tagsEl.scrollIntoView({behavior : 'smooth'})
+
+        }else{
+            main.innerHTML= `<h1 class="no-results">No Results Found</h1>`
+        }
+       
+    })
+
+}
+
+
+
+
+
+function showMovies(data) {
+  main.innerHTML = "";
+
+  data.forEach((movie) => {
+    const { title, poster_path, vote_average, overview, id } = movie;
+    const movieEl = document.createElement("div");
+    movieEl.classList.add("movie");
+    movieEl.innerHTML = `
+               <img src="${
+                 poster_path
+                   ? IMG_URL + poster_path
+                   : "http://via.placeholder.com/1080x1580"
+               }" alt="${title}">
+  
+              <div class="movie-info">
+                  <h3>${title}</h3>
+                  
+                  <span class="${getColor(
+                    vote_average
+                  )}">${vote_average.toFixed(
+      1
+    )}<svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path fill="none" d="M0 0h24v24H0z"/>
+                  <path fill="#FFD700" d="M12 2l2.56 7.47H22l-6.47 4.73L17.31 22 12 18.4 6.69 22l1.78-8.8L2 9.47h6.44L12 2z"/>
+                </svg>     
+
+                  </span>
+                 
+                  <button  class="WishList-button">Add to Wishlist</button>
+                  
+                  </div>
+  
+              <div class="overview" >
+
+                  <h2> <b>${title} </b></h2>
+                  ${overview}
+                  <br/> 
+                  <button class="know-more" id="${id}" >Know More</button>
+              </div>
+          `;
+
+    main.appendChild(movieEl);
+
+    movieEl.querySelector(".know-more").addEventListener("click", (event) => {
+      const movieId = event.target.dataset.id;
+      console.log(movieId);
+      openNav(movieId);
+    });
+  });
+}
+
+
+
+
+ <div class="overview" >
+<h2> <b>${title} </b></h2>
+   ${overview}
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- <a href="#" class="inline-flex justify-center items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+            Learn more
+          </a> -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div data-dial-init class="fixed end-6 bottom-6 group    abhishek">
+    <div id="speed-dial-menu-default" class="flex flex-col items-center hidden mb-4 space-y-2">
+      <button type="button" data-tooltip-target="tooltip-share" data-tooltip-placement="left" class="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 shadow-sm dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400">
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
+          <path d="M14.419 10.581a3.564 3.564 0 0 0-2.574 1.1l-4.756-2.49a3.54 3.54 0 0 0 .072-.71 3.55 3.55 0 0 0-.043-.428L11.67 6.1a3.56 3.56 0 1 0-.831-2.265c.006.143.02.286.043.428L6.33 6.218a3.573 3.573 0 1 0-.175 4.743l4.756 2.491a3.58 3.58 0 1 0 3.508-2.871Z" />
+        </svg>
+        <span class="sr-only">Share</span>
+      </button>
+      <div id="tooltip-share" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+        Share
+        <div class="tooltip-arrow" data-popper-arrow></div>
+      </div>
+
+
+
+      <button type="button" data-tooltip-target="tooltip-copy" data-tooltip-placement="left" class="flex justify-center items-center w-[52px] h-[52px] text-gray-500 hover:text-gray-900 bg-white rounded-full border border-gray-200 dark:border-gray-600 dark:hover:text-white shadow-sm dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400">
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
+          <path d="M5 9V4.13a2.96 2.96 0 0 0-1.293.749L.879 7.707A2.96 2.96 0 0 0 .13 9H5Zm11.066-9H9.829a2.98 2.98 0 0 0-2.122.879L7 1.584A.987.987 0 0 0 6.766 2h4.3A3.972 3.972 0 0 1 15 6v10h1.066A1.97 1.97 0 0 0 18 14V2a1.97 1.97 0 0 0-1.934-2Z" />
+          <path d="M11.066 4H7v5a2 2 0 0 1-2 2H0v7a1.969 1.969 0 0 0 1.933 2h9.133A1.97 1.97 0 0 0 13 18V6a1.97 1.97 0 0 0-1.934-2Z" />
+        </svg>
+        <span class="sr-only">Copy</span>
+      </button>
+      <div id="tooltip-copy" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+        Copy
+        <div class="tooltip-arrow" data-popper-arrow></div>
+      </div>
+    </div>
+    <button type="button" data-dial-toggle="speed-dial-menu-default" aria-controls="speed-dial-menu-default" aria-expanded="false" class="flex items-center justify-center text-white bg-blue-700 rounded-full w-14 h-14 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:focus:ring-blue-800">
+      <svg class="w-5 h-5 transition-transform group-hover:rotate-45" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16" />
+      </svg>
+      <span class="sr-only">Open actions menu</span>
+    </button>
+  </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const API_KEY = "api_key=1cf50e6248dc270629e802686245c2c8";
+// const BASE_URL = "https://api.themoviedb.org/3";
+// const API_URL = BASE_URL + "/discover/movie?sort_by=popularity.desc&" + API_KEY;
+// const IMG_URL = "https://image.tmdb.org/t/p/w500";
+// const searchURL = BASE_URL + "/search/movie?" + API_KEY;
+
+// const genres = [
+//   {
+//     id: 28,
+//     name: "Action",
+//   },
+//   {
+//     id: 12,
+//     name: "Adventure",
+//   },
+//   {
+//     id: 16,
+//     name: "Animation",
+//   },
+//   {
+//     id: 35,
+//     name: "Comedy",
+//   },
+//   {
+//     id: 80,
+//     name: "Crime",
+//   },
+//   {
+//     id: 99,
+//     name: "Documentary",
+//   },
+//   {
+//     id: 18,
+//     name: "Drama",
+//   },
+//   {
+//     id: 10751,
+//     name: "Family",
+//   },
+//   {
+//     id: 14,
+//     name: "Fantasy",
+//   },
+//   {
+//     id: 36,
+//     name: "History",
+//   },
+//   {
+//     id: 27,
+//     name: "Horror",
+//   },
+//   {
+//     id: 10402,
+//     name: "Music",
+//   },
+//   {
+//     id: 9648,
+//     name: "Mystery",
+//   },
+//   {
+//     id: 10749,
+//     name: "Romance",
+//   },
+//   {
+//     id: 878,
+//     name: "Science Fiction",
+//   },
+//   {
+//     id: 10770,
+//     name: "TV Movie",
+//   },
+//   {
+//     id: 53,
+//     name: "Thriller",
+//   },
+//   {
+//     id: 10752,
+//     name: "War",
+//   },
+//   {
+//     id: 37,
+//     name: "Western",
+//   },
+// ];
+// const main = document.getElementById("main");
+// const form = document.getElementById("form");
+// const search = document.getElementById("search");
+// const tagsEl = document.getElementById("tags");
+
+// const prev = document.getElementById("prev");
+// const next = document.getElementById("next");
+// const current = document.getElementById("current");
+
+
+// var currentPage = 1;
+// var nextPage = 2;
+// var prevPage = 3;
+// var lastUrl = '';
+// var totalPages = 100;
+
+// var selectedGenre = [];
+
+// form.addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   const searchTerm = search.value;
+//   selectedGenre = [];
+//   if (searchTerm) {
+//     getMovies(searchURL + "&query=" + searchTerm);
+//   } else {
+//     getMovies(API_URL);
+//   }
+// });
+
+// setGenre();
+// function setGenre() {
+//   tagsEl.innerHTML = "";
+//   genres.forEach((genre) => {
+//     const t = document.createElement("div");
+//     t.classList.add("tag");
+//     t.id = genre.id;
+//     t.innerText = genre.name;
+//     t.addEventListener("click", () => {
+//       if (selectedGenre.length == 0) {
+//         selectedGenre.push(genre.id);
+//       } else {
+//         if (selectedGenre.includes(genre.id)) {
+//           selectedGenre.forEach((id, idx) => {
+//             if (id == genre.id) {
+//               selectedGenre.splice(idx, 1);
+//             }
+//           });
+//         } else {
+//           selectedGenre.push(genre.id);
+//         }
+//       }
+//       console.log(selectedGenre);
+//       getMovies(API_URL + "&with_genres=" + encodeURI(selectedGenre.join(",")));
+//       highlightSelection();
+//     });
+//     tagsEl.append(t);
+//   });
+// }
+
+// function highlightSelection() {
+//   const tags = document.querySelectorAll(".tag");
+//   tags.forEach((tag) => {
+//     tag.classList.remove("highlight");
+//   });
+//   clearBtn();
+//   if (selectedGenre.length != 0) {
+//     selectedGenre.forEach((id) => {
+//       const hightlightedTag = document.getElementById(id);
+//       hightlightedTag.classList.add("highlight");
+//     });
+//   }
+// }
+
+// function clearBtn() {
+//   let clearBtn = document.getElementById("clear");
+//   if (clearBtn) {
+//     clearBtn.classList.add("highlight");
+//   } else {
+//     let clear = document.createElement("div");
+//     clear.classList.add("tag", "highlight");
+//     clear.id = "clear";
+//     clear.innerText = "ClearX";
+//     clear.addEventListener("click", () => {
+//       selectedGenre = [];
+//       setGenre();
+//       getMovies(API_URL);
+//     });
+//     tagsEl.append(clear);
+//   }
+// }
+
+// getMovies(API_URL);
+
+// function getMovies(url) {
+//   lastUrl = url;
+//   fetch(url)
+//     .then((res) => res.json())
+//     .then((data) => {
+//       console.log(data.results);
+//       if (data.results.length !== 0) {
+//         showMovies(data.results);
+//         currentPage = data.page;
+//         nextPage = currentPage + 1;
+//         prevPage = currentPage - 1;
+//         totalPages = data.total_pages;
+
+//         current.innerText = currentPage;
+
+//         if (currentPage <= 1) {
+//           prev.classList.add("disabled");
+//           next.classList.remove("disabled");
+//         } else if (currentPage >= totalPages) {
+//           prev.classList.remove("disabled");
+//           next.classList.add("disabled");
+//         } else {
+//           prev.classList.remove("disabled");
+//           next.classList.remove("disabled");
+//         }
+
+//         tagsEl.scrollIntoView({ behavior: "smooth" });
+//       } else {
+//         main.innerHTML = `<h1 class="no-results">No Results Found</h1>`;
+//       }
+//     });
+// }
+
+
+
+
+
+
+
+
+// function showMovies(data) {
+//   main.innerHTML = "";
+
+//   data.forEach((movie) => {
+//     const { title, poster_path, vote_average, overview, id } = movie;
+//     const movieEl = document.createElement("div");
+//     movieEl.classList.add("movie");
+//     movieEl.innerHTML = `
+//                <img src="${
+//                  poster_path
+//                    ? IMG_URL + poster_path
+//                    : "http://via.placeholder.com/1080x1580"
+//                }" alt="${title}"
+               
+              
+
+
+               
+//                >
+
+
+              
+  
+//               <div class="movie-info">
+//                   <h3>${title}</h3>
+                  
+//                   <span class="${getColor(
+//                     vote_average
+//                   )}">${vote_average.toFixed(
+//       1
+//     )}<svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+//                   <path fill="none" d="M0 0h24v24H0z"/>
+//                   <path fill="#FFD700" d="M12 2l2.56 7.47H22l-6.47 4.73L17.31 22 12 18.4 6.69 22l1.78-8.8L2 9.47h6.44L12 2z"/>
+//                 </svg>
+                
+                
+               
+
+
+//                   </span>
+                 
+                
+                  
+//                   </div>
+
+   
+//                   <div class="overview" >
+                 
+//                   <h2> <b>${title} </b></h2>
+//                   ${overview}
+                     
+
+//                   <br/> 
+                 
+//                   <button class="know-more" id="${id}" >Know More</button>  
+
+//                   <button  class="WishList-button">Add to Wishlist</button>
+//               </div>
+  
+             
+//           `;
+
+//     main.appendChild(movieEl);
+
+//     movieEl.querySelector(".know-more").addEventListener("click", (event) => {
+//       const movieId = event.target.dataset.id;
+//       console.log(movieId);
+//       openNav(movieId);
+//     });
+//   });
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function getColor(vote) {
+//   if (vote >= 8) {
+//     return "green";
+//   } else if (vote >= 5) {
+//     return "orange";
+//   } else {
+//     return "red";
+//   }
+// }
+
+// prev.addEventListener("click", () => {
+//   if (prevPage > 0) {
+//     pageCall(prevPage);
+//   }
+// });
+
+// next.addEventListener("click", () => {
+//   if (nextPage <= totalPages) {
+//     pageCall(nextPage);
+//   }
+// });
+
+// function pageCall(page) {
+//   let urlSplit = lastUrl.split("?");
+//   let queryParams = urlSplit[1].split("&");
+//   let key = queryParams[queryParams.length - 1].split("=");
+//   if (key[0] != "page") {
+//     let url = lastUrl + "&page=" + page;
+//     getMovies(url);
+//   } else {
+//     key[1] = page.toString();
+//     let a = key.join("=");
+//     queryParams[queryParams.length - 1] = a;
+//     let b = queryParams.join("&");
+//     let url = urlSplit[0] + "?" + b;
+//     getMovies(url);
+//   }
+// }
+
+
+
+
+// const movieImage = document.querySelector('.movie img');
+
+// movieImage.addEventListener('click', () => {
+//   const movie = movieImage.closest('.movie');
+//   movie.classList.toggle('show-overview');
+// });
+
+
+
+
+
+
+
+<?php
+// Database connection parameters
+$host = "localhost"; // Change this to your database host
+$username = "root"; // Change this to your database username
+$password = ""; // Change this to your database password
+$database = "moviex"; // Change this to your database name
+
+// Establish database connection
+$conn = new mysqli($host, $username, $password, $database);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// If registration form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Retrieve form data
+    $email = $_POST['new-email'];
+    $password = $_POST['password'];
+
+    // SQL query to insert data into the database
+    $sql = "INSERT INTO account (email, password) VALUES ('$email', '$password')";
+
+    if ($conn->query($sql) === TRUE) {
+        // Redirect to welcome page
+        header("Location: welcome.php");
+        exit();
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+}
+
+// Close the database connection
+$conn->close();
+?>
+
+
+
+
+
+
+ <!-- <section id="Account">
+
+<section class="bg-gray-50 dark:bg-gray-900">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
+    <div class="flex flex-col justify-center">
+      <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">We invest in the world’s potential</h1>
+      <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+      <a href="#" class="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center" id="create-account-link">Create account</a>
+    </div>
+    <div id="login-container">
+      <div class="w-full lg:max-w-xl p-6 space-y-8 sm:p-8 bg-white rounded-lg shadow-xl dark:bg-gray-800" id="login-form">
+        <h2 class="text-2xl font-bold text-gray-900 dark:text-white">
+          Login in to Mᴏᴠɪᴇ<span class="x">乂</span>
+        </h2>
+
+          <!-- Login From  -->
+        <form class="mt-8 space-y-6"   action="./php//register.php"  method="POST" >
+          <div>
+            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+            <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required />
+          </div>
+          <div>
+            <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your password</label>
+            <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+          </div>
+
+          <div class="flex items-start">
+            <a href="#" class="ms-auto text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">Lost Password?</a>
+          </div>
+          <button type="submit" class="w-full px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 sm:w-auto dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Login to your account</button>
+
+          <div class="text-sm font-medium text-gray-900 dark:text-white">
+            Not registered yet? <a href="#" id="show-registration-link" class="text-blue-600 hover:underline dark:text-blue-500" >Create account</a>
+          </div>
+
+        </form>
+      </div>
+      <div class="w-full lg:max-w-xl p-6 space-y-8 sm:p-8 bg-white rounded-lg shadow-xl dark:bg-gray-800 hidden" id="registration-form">
+        <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Create your Mᴏᴠɪᴇ<span class="x">乂</span> account</h2>
+
+        <!-- Add your registration form here -->
+        <!-- Example: -->
+        <form class="mt-8 space-y-6"  action="./php/register.php" method="POST" >
+          <div>
+            <label for="new-email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+            <input type="email" name="new-email" id="new-email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required />
+          </div>
+
+          <div>
+            <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your password</label>
+            <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+          </div>
+
+          <!-- Add more fields as needed -->
+          <button type="submit" class="w-full px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 sm:w-auto dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Create account</button>
+
+
+          <button type="button" class="w-full px-5 py-3 mt-3 text-base font-medium text-center text-gray-900 bg-gray-200 rounded-lg hover:bg-gray-300 focus:ring-4 focus:ring-gray-300 sm:w-auto dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800" onclick="goBack()">Back to login</button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+<!-- </section>
+</section> --> -->
+
+
